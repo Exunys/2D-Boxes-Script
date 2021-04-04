@@ -41,11 +41,11 @@ local Typing = false
 _G.SendNotifications = true   -- If set to true then the script would notify you frequently on any changes applied and when loaded / errored. (If a game can detect this, it is recommended to set it to false)
 _G.DefaultSettings = false   -- If set to true then the 2D boxes script would run with default settings regardless of any changes you made.
 
-_G.TeamCheck = true   -- If set to true then the script would create 2D boxes only for the enemy team members.
+_G.TeamCheck = false   -- If set to true then the script would create 2D boxes only for the enemy team members.
 
 _G.SquaresVisible = true   -- If set to true then the 2D boxes will be visible and vice versa.
 _G.SquareColor = Color3.fromRGB(255, 80, 10)   -- The color that the 2D boxes would appear as.
-_G.SquareThickness = 2   -- The thickness of the 2D boxes.
+_G.SquareThickness = 1   -- The thickness of the 2D boxes.
 _G.SquareFilled = false   -- If set to true then the squares would be filled and vice versa.
 _G.SquareTransparency = 0.7   -- The transparency of the 2D boxes / squares.
 
@@ -55,7 +55,6 @@ _G.HeadOffset = Vector3.new(0, 0.5, 0)
 _G.LegsOffset = Vector3.new(0, 3, 0)
 
 _G.DisableKey = Enum.KeyCode.Q   -- The key that disables / enables the 2D boxes.
-
 
 local function CreateSquares()
 	for _, v in next, Players:GetPlayers() do
