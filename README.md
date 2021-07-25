@@ -11,12 +11,12 @@ You can also edit different settings about the square, such as color appearance,
 
 ## Script
 
-Load the script by using the code below or by copying it from [here](https://github.com/UbicastDev/2D-Boxes-Script/blob/main/2D%20Boxes).
+Load the script by using the code below or by copying it from [here](https://github.com/Exunys/2D-Boxes-Script/blob/main/2D%20Boxes.lua).
 ```lua
 loadstring(game:HttpGet("https://pastebin.com/raw/tqca3VFH"))()
 ```
 
 ## Contact information
 
-- Discord : [Aleksandar](https://discord.com/users/611111398818316309)
-- ROBLOX : [Ubicast](https://www.roblox.com/users/330279990/profile)
+- Discord : [Exunys](https://discord.com/users/611111398818316309)
+- ROBLOX : [Exunys](https://www.roblox.com/users/330279990/profile)
