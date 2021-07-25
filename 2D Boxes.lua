@@ -1,14 +1,3 @@
---[[
-
-		██╗░░░██╗██████╗░██╗░█████╗░░█████╗░░██████╗████████╗
-		██║░░░██║██╔══██╗██║██╔══██╗██╔══██╗██╔════╝╚══██╔══╝
-		██║░░░██║██████╦╝██║██║░░╚═╝███████║╚█████╗░░░░██║░░░
-		██║░░░██║██╔══██╗██║██║░░██╗██╔══██║░╚═══██╗░░░██║░░░
-		╚██████╔╝██████╦╝██║╚█████╔╝██║░░██║██████╔╝░░░██║░░░
-		░╚═════╝░╚═════╝░╚═╝░╚════╝░╚═╝░░╚═╝╚═════╝░░░░╚═╝░░░
-
-]]
-
 local function API_Check()
     if Drawing == nil then
         return "No"
@@ -21,7 +10,7 @@ local Find_Required = API_Check()
 
 if Find_Required == "No" then
     game:GetService("StarterGui"):SetCore("SendNotification",{
-        Title = "Ubicast Developer";
+        Title = "Exunys Developer";
         Text = "Boxes script could not be loaded because your exploit is unsupported.";
         Duration = math.huge;
         Button1 = "OK"
@@ -162,7 +151,7 @@ local function CreateSquares()
 							end
 						end)
 					end
-					end
+				end
 			end
 		end
 	end)
@@ -192,7 +181,7 @@ UserInputService.InputBegan:Connect(function(Input)
         
         if _G.SendNotifications == true then
             game:GetService("StarterGui"):SetCore("SendNotification",{
-                Title = "Ubicast Developer";
+                Title = "Exunys Developer";
                 Text = "The 2D boxes' visibility is now set to "..tostring(_G.SquaresVisible)..".";
                 Duration = 5;
             })
@@ -207,7 +196,7 @@ end)
 if Success and not Errored then
     if _G.SendNotifications == true then
         game:GetService("StarterGui"):SetCore("SendNotification",{
-            Title = "Ubicast Developer";
+            Title = "Exunys Developer";
             Text = "2D Boxes script has successfully loaded.";
             Duration = 5;
         })
@@ -215,12 +204,12 @@ if Success and not Errored then
 elseif Errored and not Success then
     if _G.SendNotifications == true then
         game:GetService("StarterGui"):SetCore("SendNotification",{
-            Title = "Ubicast Developer";
+            Title = "Exunys Developer";
             Text = "2D Boxes script has errored while loading, please check the developer console! (F9)";
             Duration = 5;
         })
     end
-    TestService:Message("The boxes script has errored, please notify Ubicast with the following information :")
+    TestService:Message("The boxes script has errored, please notify Exunys with the following information :")
     warn(Errored)
     print("!! IF THE ERROR IS A FALSE POSITIVE (says that a player cannot be found) THEN DO NOT BOTHER !!")
 end
